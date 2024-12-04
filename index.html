@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Cosméticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Colecciones</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Productos originales</h1>
+            <p>Tienda Online de cosméticos coreanos</p>
+            <button class="btn-primary">Ver más productos</button>
+        </div>
+        <div class="hero-image">
+            <img src="imagen.jpg" alt="Imagen de cosmético">
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+        <h2>Categorías</h2>
+        <div class="category-grid">
+            <div class="category">Ofertas</div>
+            <div class="category">Marcas</div>
+            <div class="category">Cuidado</div>
+            <div class="category">Skincare</div>
+        </div>
+    </section>
+
+    <!-- Catálogo de productos -->
+    <section id="catalog">
+        <h2>Catálogo</h2>
+        <div class="product-list">
+            <!-- Producto 1 -->
+            <div class="product" data-name="Serum 1" data-price="150">
+                <img src="serum1.jpg" alt="Serum 1" class="product-image">
+                <h3>Serum 1</h3>
+                <p>Precio: $150</p>
+                <button class="add-to-cart" data-name="Serum 1" data-price="150">Agregar al carrito</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product" data-name="Serum 2" data-price="200">
+                <img src="serum2.jpg" alt="Serum 2" class="product-image">
+                <h3>Serum 2</h3>
+                <p>Precio: $200</p>
+                <button class="add-to-cart" data-name="Serum 2" data-price="200">Agregar al carrito</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product" data-name="Serum 3" data-price="250">
+                <img src="serum3.jpg" alt="Serum 3" class="product-image">
+                <h3>Serum 3</h3>
+                <p>Precio: $250</p>
+                <button class="add-to-cart" data-name="Serum 3" data-price="250">Agregar al carrito</button>
+            </div>
+        <!-- Producto 4 -->
+            <div class="product" data-name="Serum 3" data-price="250">
+                <img src="serum3.jpg" alt="Serum 3" class="product-image">
+                <h3>Serum 3</h3>
+                <p>Precio: $250</p>
+                <button class="add-to-cart" data-name="Serum 3" data-price="250">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito -->
+    <section id="cart">
+        <h2>Carrito de Compras</h2>
+        <div id="cart-items"></div>
+        <p id="total-cost">Costo Total: $0</p>
+        <div>
+            <input type="text" id="promo-code" placeholder="Código de promoción">
+            <button id="apply-promo">Aplicar Código</button>
+        </div>
+        <button id="clear-cart">Vaciar Carrito</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda Online de Cosméticos</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<!-- Producto 1 -->
+<div class="product">
+    <img src="serum1.jpg" alt="Serum 1" class="product-image">
+    <h3>Serum 1</h3>
+    <p>Precio: $150</p>
+    <button class="view-details" data-name="Serum 1" data-price="150" data-description="Descripción del Serum 1">Ver detalles</button>
+</div>
+
+<!-- Modal -->
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close-btn">&times;</span>
+        <h2 id="modal-product-name"></h2>
+        <img id="modal-product-image" src="" alt="Producto">
+        <p id="modal-product-description"></p>
+        <p id="modal-product-price"></p>
+        
+    </div>
+    
+</div>
